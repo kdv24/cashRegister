@@ -13,12 +13,17 @@
 </head>
 	<body>
 		<h1 class="jumbotron">Cash Register Receipt Template</h1>
-		<div id="contact-info">			
+			<div class="contact-info">		
 			<h4>My Super Cool Business</h4>
 			<h4>Phone number here</h4>		
 			<address>1234 Cool Moe Dee Street<br> This Town, ST  56789</address>
-		</div>
+			</div>
+		<div id="numbers-output">
 
+		</div>
+		<div id="thanks">
+			<h3>Thank you for your business!</h3>
+		</div>	
 
 	</body>
 </html>
