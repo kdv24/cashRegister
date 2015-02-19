@@ -8,6 +8,28 @@ h1 {
 	text-align: center;
 }
 
-.contact-info {
-	display: center;
+.container {
 }
+
+.contact-info {
+	text-align: center;
+}
+
+#receipt-output {
+	display: inline-block;
+	float: center;
+	padding-left: 35%;
+}
+
+.priceandquantity {
+	display: inline-block;
+}
+
+#thanks {
+	text-align: center;
+}
+
+.itemList {
+	color: red;
+}
+

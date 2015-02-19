@@ -1,6 +1,8 @@
 <?php
+	$itemName = $_GET["itemName"];
 	$itemPrice = $_GET["itemPrice"];
-	$prices = array();
+	$prices = array($itemPrice);
+	$itemQuantity = $_GET["itemQuantity"];
 ?>
 
 
@@ -13,14 +15,22 @@
 </head>
 	<body>
 		<h1 class="jumbotron">Cash Register Receipt Template</h1>
+		<div class="container">
 			<div class="contact-info">		
-			<h4>My Super Cool Business</h4>
-			<h4>Phone number here</h4>		
-			<address>1234 Cool Moe Dee Street<br> This Town, ST  56789</address>
+				<h4>My Super Cool Business</h4>
+				<h4>Phone number here</h4>		
+				<address>1234 Cool Moe Dee Street<br> This Town, ST  56789</address>
 			</div>
-		<div id="numbers-output">
-
-		</div>
+			<div id="receipt-output">
+				<?php echo "Item ordered: " . "<span class='itemName'>" . $itemName . "</span>"; ?>
+				<br>
+				<div class="priceandquantity">
+				<?php echo "Price of item: " . "<span class='itemList'>" . $itemPrice . "</span>"; ?>
+				<br>
+				<?php echo "Quantity ordered: " . "<span class='itemList'>" . $itemQuantity . "</span>"; ?>
+				</div>
+			</div>
+		</div>	
 		<div id="thanks">
 			<h3>Thank you for your business!</h3>
 		</div>	
