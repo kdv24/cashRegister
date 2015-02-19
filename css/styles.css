@@ -40,3 +40,10 @@ h1 {
 	color: red;
 }
 
+.italics {
+	font-style: italic;
+}
+
+.reminder {
+	padding-left: 5%;
+}

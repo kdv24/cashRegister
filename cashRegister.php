@@ -41,15 +41,25 @@
 			  <div class="col-xs-12 col-md-3">
 				<?php
 				foreach($names as $name) {
-				 echo "Item ordered: " . "<span class='itemName'>" . $name .  "</span>" . "<br>"; 
-				}
+					echo "Item ordered: ";
+					if($name == ""){
+				 		echo "<span class='italics'>" . "Please enter a name." . "</span>" . "<br>";}
+				 	else {	
+					 	echo "<span class='itemName'>" . $name .  "</span>" . "<br>"; 
+					 }
+					}
 				?>
 				<br>
 			  </div>
 			  <div class="col-xs-12 col-sm-6 col-md-3">
 				<?php
 				foreach($prices as $price){
-				echo "Price of item: " . "<span class='itemList'>" . $price . "</span>" . "<br>"; 
+					echo "Price of item: ";
+					if($price == ""){
+						echo "<span class='italics reminder'>" . "Please enter a price." . "</span>" . "<br>";}	
+					else {
+						echo "<span class='itemList'>" . $price . "</span>" . "<br>"; 
+					}	
 				$totalPrice = $totalPrice +$price;
 				}
 
@@ -61,10 +71,14 @@
 			  <div class="col-xs-12 col-sm-6 col-md-3">
 				<?php
 				foreach($Quantities as $Quantity){
-				echo "Quantity ordered: " . "<span class='itemList'>" . $Quantity . "</span>" . "<br>"; 
+					echo "Quantity ordered: ";
+					if($Quantity == ""){
+						echo "<span class='italics reminder'>" . "Please enter the quantity." . "</span>" . "<br>";}
+					else {	
+						echo "<span class='itemList'>" . $Quantity . "</span>" . "<br>"; 
+					}	
 				$totalQuantity = $totalQuantity +$Quantity;
 				}
-
 				echo "<br>" . "Number of items purchased: " . $totalQuantity . "<br>";
 				?>
 			  </div>				
