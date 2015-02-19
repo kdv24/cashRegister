@@ -16,7 +16,7 @@
 	$itemQuantity5 = $_GET["itemQuantity5"];
 	$names = array($itemName1, $itemName2, $itemName3, $itemName4, $itemName5);	
 	$prices = array($itemPrice1, $itemPrice2, $itemPrice3, $itemPrice4, $itemPrice5);
-	$Quantity = array($itemQuantity1, $itemQuantity2, $itemQuantity3, $itemQuantity4, $itemQuantity5);
+	$Quantities = array($itemQuantity1, $itemQuantity2, $itemQuantity3, $itemQuantity4, $itemQuantity5);
 ?>
 
 
@@ -37,16 +37,26 @@
 			</div>
 			<div id="receipt-output">
 				<?php
-				foreach($names as $name){
-				 echo "Item ordered: " . "<span class='itemName'>" . $name . "</span>"; 
+				foreach($names as $name) {
+				 echo "Item ordered: " . "<span class='itemName'>" . $name .  "</span>" . "<br>"; 
 				}
 				?>
 				<br>
-				<div class="priceandquantity">
-				<?php echo "Price of item: " . "<span class='itemList'>" . $itemPrice . "</span>"; ?>
+
+				<?php
+				foreach($prices as $price){
+				echo "Price of item: " . "<span class='itemList'>" . $price . "</span>" . "<br>"; 
+				}
+				?>
+
 				<br>
-				<?php echo "Quantity ordered: " . "<span class='itemList'>" . $itemQuantity . "</span>"; ?>
-				</div>
+
+				<?php
+				foreach($Quantities as $Quantity){
+				echo "Quantity ordered: " . "<span class='itemList'>" . $Quantity . "</span>" . "<br>"; 
+				}
+				?>
+				
 			</div>
 		</div>	
 		<div id="thanks">
