@@ -14,8 +14,16 @@ h1 {
 .contact-info {
 	text-align: center;
 }
+#receipt-input {
+	padding: 5%;
+}
+
+#receipt-input .form-group {
+	padding: 5%;
+}
 
 #receipt-output {
+/*make table or two columns for receipt*/
 	display: inline-block;
 	float: center;
 	padding-left: 35%;

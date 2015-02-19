@@ -9,7 +9,7 @@
 	<body>
 		<h1>Cash Register Entry</h1>
 		<div class="container">
-			<form action="cashRegister.php">
+			<form action="cashRegister.php" id="receipt-input">
 				<div class="form-group one">
 				<label for "itemName">First Item Name</label>
 				<input id="itemName" name="itemName" class="form-control" type="itemName" placeholder="name of product">
@@ -34,6 +34,24 @@
 				<label for="itemPrice">Third Item Price</label>
 				<input id="itemPrice" name="itemPrice" class="form-control" type="text" placeholder="single item price">
 				<label for="itemQuantity">Third Item Quantity</label>
+				<input id="itemQuantity" name="itemQuantity" class="form-control" type="number" placeholder="number of items being purchased">
+				</div>
+
+				<div class="form-group four">
+				<label for "itemName">Fourth Item Name</label>
+				<input id="itemName" name="itemName" class="form-control" type="itemName" placeholder="name of product">
+				<label for="itemPrice">Fourth Item Price</label>
+				<input id="itemPrice" name="itemPrice" class="form-control" type="text" placeholder="single item price">
+				<label for="itemQuantity">Fourth Item Quantity</label>
+				<input id="itemQuantity" name="itemQuantity" class="form-control" type="number" placeholder="number of items being purchased">
+				</div>
+
+				<div class="form-group five">
+				<label for "itemName">Fifth Item Name</label>
+				<input id="itemName" name="itemName" class="form-control" type="itemName" placeholder="name of product">
+				<label for="itemPrice">Fifth Item Price</label>
+				<input id="itemPrice" name="itemPrice" class="form-control" type="text" placeholder="single item price">
+				<label for="itemQuantity">Fifth Item Quantity</label>
 				<input id="itemQuantity" name="itemQuantity" class="form-control" type="number" placeholder="number of items being purchased">
 				</div>
 				<button class="btn btn-primary">Submit</button>
